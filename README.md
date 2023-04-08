@@ -25,7 +25,8 @@ show me that?
 
 ```
 Sure, I'd be happy to help you with that!
-In Rust, you can create a for loop to iterate over a range of values using the .. operator:
+In Rust, you can create a for loop to iterate over 
+a range of values using the .. operator:
 ```
 
 ``` rust
@@ -47,7 +48,10 @@ Value of i: 4
 ```
 
 ```
-In the example above, we used the .. operator to create a range from 0 to 4 (inclusive on the lower bound, exclusive on the upper bound). The loop iterates over each value in the range, and the current value is assigned to the variable i.
+In the example above, we used the .. operator to create a range from 0 to 4 
+(inclusive on the lower bound, exclusive on the upper bound). 
+The loop iterates over each value in the range, and the current 
+value is assigned to the variable i.
 
 You can also create a while loop in Rust:
 ```
@@ -63,15 +67,20 @@ while i < 5 {
 ```
 This will print the same output as the for loop example.
 
-In the while loop, we start with an initial value of i = 0, and then loop while i is less than 5. Inside the loop, we print the value of i, and then increment it by 1 using the += operator.
+In the while loop, we start with an initial value of i = 0, 
+and then loop while i is less than 5. Inside the loop,
+we print the value of i, and then increment it by 1 using the += operator.
 
-I hope this helps you get started with control structures in Rust. Let me know if you have any other questions!
+I hope this helps you get started with control structures in Rust. 
+Let me know if you have any other questions!
 ```
 
-what is the command “loop” used for?
+What is the command “loop” used for?
 
 ```
-The loop command in Rust is used to create an infinite loop that continues until it is explicitly exited using the break keyword. Here's an example:
+The loop command in Rust is used to create an infinite loop 
+that continues until it is explicitly exited using the break keyword. 
+Here's an example:
 ```
 
 ``` rust
@@ -87,7 +96,11 @@ loop {
 ```
 
 ```
-In the example above, we start with an initial value of counter = 0. The loop statement creates an infinite loop that iterates indefinitely. Inside the loop, we print the current value of counter using the println! macro, increment counter by 1, and then check if counter has reached a value of 5. If counter is greater than or equal to 5, we use the break keyword to exit the loop.
+In the example above, we start with an initial value of counter = 0. 
+The loop statement creates an infinite loop that iterates indefinitely. 
+Inside the loop, we print the current value of counter using the println! macro,
+increment counter by 1, and then check if counter has reached a value of 5. 
+If counter is greater than or equal to 5, we use the break keyword to exit the loop.
 
 The output of this code will be:
 ```
@@ -104,7 +117,7 @@ Counter value: 4
 Note that you should use the loop statement with caution, as an infinite loop that doesn't exit can cause your program to hang or crash. However, in certain cases, such as when implementing event loops or waiting for user input, it can be useful to create an infinite loop that only exits under specific conditions using break.
 ```
 
-is that a do ..while?
+Is that a do ..while?
 
 ```
 No, Rust does not have a do..while loop like some other programming languages such as C and Java. Instead, you can achieve similar behavior using a combination of a loop and break statement. Here's an example:
@@ -129,7 +142,7 @@ This achieves the same result as a do..while loop in other languages, where the 
 I hope that clears things up! Let me know if you have any more questions.
 ```
 
-so, that is a kind of “do..while”, right?
+So, that is a kind of “do..while”, right?
 
 ```
 Yes, you can think of the Rust code I showed you earlier as a way to achieve the same behavior as a do..while loop in other programming languages. In a do..while loop, the loop body is executed at least once, and then the loop condition is checked. In the Rust code I showed you, we use a loop statement to create an infinite loop, and then check the condition at the end of each iteration using an if statement. This allows us to achieve the same behavior as a do..while loop.
@@ -137,7 +150,7 @@ Yes, you can think of the Rust code I showed you earlier as a way to achieve the
 However, it's worth noting that Rust does not have a do..while loop construct like some other programming languages, so it's important to understand how to achieve the same behavior using Rust's available control structures.
 ```
 
-any other control structure to take into account?
+Any other control structure to take into account?
 
 ```
 Yes, Rust provides several other control structures that you may find useful in your programming. Here are a few examples:
@@ -207,7 +220,7 @@ Value of i: 4
 I hope this gives you an idea of some of the other control structures available in Rust. Let me know if you have any more questions!
 ```
 
-these are all the control strucrures?
+These are all the control structures?
 
 ```
 No, Rust provides several other control structures in addition to the ones I mentioned earlier. Here are a few more examples:
@@ -333,7 +346,7 @@ In this example, we create a new HashMap, and then insert several key-value pair
 These are just a few examples of the data structures available in Rust. Rust also provides many other data structures, including tuples, structs, enums, and more. Let me know if you have any more questions!
 ```
 
-now I want to have a quick overview of methods. Methods for strings,
+Now I want to have a quick overview of methods. Methods for strings,
 numbers, vectors, hash maps
 
 ```
@@ -414,13 +427,17 @@ let removed = map.remove("banana");
 
 // Returns true if the map contains the given key
 let contains_apple = map.contains_key("apple");
-These are just a few examples of the many methods available for Rust's standard library types. Let me know if you have any more questions!
+These are just a few examples of the many methods available 
+for Rust's standard library types. Let me know if you have any more questions!
 ```
 
 any equivalent to lambda functions in rust?
 
 ```
-Yes, Rust has closures, which are similar to lambda functions in other programming languages. Closures are anonymous functions that can capture variables from their surrounding environment. Here's an example of a closure that adds two numbers together:
+Yes, Rust has closures, which are similar to lambda functions 
+in other programming languages. Closures are anonymous functions 
+that can capture variables from their surrounding environment. 
+Here's an example of a closure that adds two numbers together:
 ```
 
 ``` rust
@@ -430,7 +447,10 @@ println!("{}", result); // prints "5"
 ```
 
 ```
-In this example, the |a, b| a + b syntax defines a closure that takes two parameters (a and b) and returns their sum. The closure is then assigned to the variable add, which can be used like a regular function.
+In this example, the |a, b| a + b syntax defines a closure 
+that takes two parameters (a and b) and returns their sum. 
+The closure is then assigned to the variable add, which can
+be used like a regular function.
 
 Closures can also capture variables from their surrounding environment, like so:
 ```
@@ -443,17 +463,22 @@ println!("{}", result); // prints "12"
 ```
 
 ```
-In this example, the closure |a| a + x captures the variable x from its surrounding environment and adds it to the parameter a. The closure is then assigned to the variable add_x, which can be used like a regular function.
+In this example, the closure |a| a + x captures the variable x
+from its surrounding environment and adds it to the parameter a.
+The closure is then assigned to the variable add_x, which can be
+used like a regular function.
 
-Closures are a powerful tool in Rust, and they are often used in combination with iterators to perform complex operations on collections.
+Closures are a powerful tool in Rust, and they are often used 
+in combination with iterators to perform complex operations on collections.
 ```
 
 Any other thing I should know if I am coming from python? what about
 advanced features such as decorators?
 
 
-    ```{ eval=FALSE, include=TRUE}
-    Yes, there are some other things you might want to know about Rust if you're coming from Python. Here are a few:
+```{ eval=FALSE, include=TRUE}
+Yes, there are some other things you might want to know about
+    Rust if you're coming from Python. Here are a few:
 
     Rust is a statically typed language, which means that types are checked at compile-time rather than run-time. This can make Rust code more efficient and reliable, but it can also be more verbose than Python.
 
@@ -491,15 +516,22 @@ fn main() {
 ```
 
 ```
-In this example, the debug macro generates an implementation of the debug function for the given struct. The macro is then called with the Person struct as its argument, which generates the necessary code to add the debug function to the Person struct. The debug function simply prints the contents of the struct using the {:?} format specifier.
+In this example, the debug macro generates an implementation
+of the debug function for the given struct. The macro is 
+then called with the Person struct as its argument, which
+generates the necessary code to add the debug function to the
+Person struct. The debug function simply prints the contents of
+the struct using the {:?} format specifier.
 
 I hope this helps! Let me know if you have any more questions.
 ```
 
-what about classes?
+What about classes?
 
 ```
-Rust has a concept called "structs", which are similar to classes in Python. Structs are used to define custom data types, and they can have methods associated with them.
+Rust has a concept called "structs", which are similar to classes
+in Python. Structs are used to define custom data types, 
+and they can have methods associated with them.
 
 Here's an example of a simple struct in Rust:
 ```
@@ -528,11 +560,21 @@ fn main() {
 ```
 
 ```
-In this example, we define a struct called Rectangle with two fields: width and height. We then define two methods associated with the struct: area, which calculates the area of the rectangle, and perimeter, which calculates the perimeter of the rectangle. Note that the self parameter refers to the instance of the struct on which the method is called.
+In this example, we define a struct called Rectangle with two fields:
+width and height. We then define two methods associated with the struct:
+area, which calculates the area of the rectangle, and perimeter, 
+which calculates the perimeter of the rectangle. Note that the self parameter
+refers to the instance of the struct on which the method is called.
 
-To create an instance of the struct, we simply use the syntax let rect = Rectangle { width: 10, height: 20 };. We can then call the methods on the instance using the dot notation, like rect.area().
+To create an instance of the struct, we simply use the syntax 
+let rect = Rectangle { width: 10, height: 20 };. We can then 
+call the methods on the instance using the dot notation, like rect.area().
 
-One difference between Rust structs and Python classes is that Rust structs are not object-oriented in the same way that Python classes are. Rust structs do not have inheritance or polymorphism, for example. However, Rust's implementation of structs can be very efficient and flexible, and they are often used in place of classes in performance-critical code.
+One difference between Rust structs and Python classes is that Rust
+structs are not object-oriented in the same way that Python classes are.
+Rust structs do not have inheritance or polymorphism, for example. 
+However, Rust's implementation of structs can be very efficient and flexible,
+and they are often used in place of classes in performance-critical code.
 ```
 
 Nice. I’m still trying to understand the use of vec! after declaring an
@@ -541,7 +583,9 @@ new Vec object with initial values. It’s a convenient way to create a
 new vector and initialize its elements at the same time.
 
 ```
-The ! after vec is part of the syntax of the macro. In Rust, macros are invoked using an exclamation mark (!) after the macro name, like vec!(1, 2, 3) or println!("Hello, world!").
+The ! after vec is part of the syntax of the macro. In Rust, 
+macros are invoked using an exclamation mark (!) after the macro name,
+like vec!(1, 2, 3) or println!("Hello, world!").
 
 Here's an example that demonstrates how to use vec! to create a new vector:
 ```
@@ -551,35 +595,56 @@ let v = vec![1, 2, 3, 4, 5];
 ```
 
 ```
-In this example, we use vec! to create a new Vec object containing the values 1, 2, 3, 4, and 5. The type of v is inferred to be Vec<i32>.
+In this example, we use vec! to create a new Vec object containing
+the values 1, 2, 3, 4, and 5. The type of v is inferred to be Vec<i32>.
 
-Note that the vec! macro can be used with any type that implements the Default trait, which includes most of the built-in types in Rust (e.g. bool, char, u8, i32, etc.). If you need to initialize a vector with values of a custom type, you can implement the Default trait for that type, or use a different method of initializing the vector (such as calling push or insert after creating an empty vector).
+Note that the vec! macro can be used with any type 
+that implements the Default trait, which includes most of the built-in types in Rust
+(e.g. bool, char, u8, i32, etc.). If you need to initialize a vector
+with values of a custom type, you can implement the Default trait
+for that type, or use a different method of initializing the vector
+(such as calling push or insert after creating an empty vector).
 ```
 
 which are macros I should remember?
 
 ```
-There are many useful macros in Rust, but here are a few that you might find particularly useful:
+There are many useful macros in Rust, but here are 
+a few that you might find particularly useful:
 
-println!: This macro is used to print formatted text to the console. It works similarly to Python's print function, but uses a syntax similar to C's printf.
+println!: This macro is used to print formatted text
+to the console. It works similarly to Python's print function,
+but uses a syntax similar to C's printf.
 
-assert!: This macro is used to test for a condition at runtime, and will panic if the condition is false. It's a simple way to write unit tests for your code.
+assert!: This macro is used to test for a condition 
+at runtime, and will panic if the condition is false.
+It's a simple way to write unit tests for your code.
 
-vec!: This macro is used to create a new Vec object with initial values, as I explained in my previous message.
+vec!: This macro is used to create a new Vec object 
+with initial values, as I explained in my previous message.
 
-format!: This macro is used to create a formatted string, similar to println!, but without printing it to the console. It can be useful for generating dynamic strings that you need to pass to other functions.
+format!: This macro is used to create a formatted string,
+similar to println!, but without printing it to the console.
+It can be useful for generating dynamic strings that you need to pass to other functions.
 
-match!: This macro is used to perform pattern matching on a value. It's similar to a switch statement in other languages, but with more powerful matching capabilities.
+match!: This macro is used to perform pattern matching on a value. 
+It's similar to a switch statement in other languages,
+but with more powerful matching capabilities.
 
-cfg!: This macro is used to conditionally compile code based on the target platform or other build parameters. It can be useful for writing cross-platform code that works on multiple architectures.
+cfg!: This macro is used to conditionally compile code
+based on the target platform or other build parameters.
+It can be useful for writing cross-platform code 
+that works on multiple architectures.
 
-These are just a few examples of useful Rust macros. There are many others that you may find useful depending on your needs.
+These are just a few examples of useful Rust macros. 
+There are many others that you may find useful depending on your needs.
 ```
 
 so for example println! is another function under the hood?
 
 ```
-Yes, that's correct! In Rust, println! is actually a macro that expands into a function call at compile time.
+Yes, that's correct! In Rust, println! is actually a macro
+that expands into a function call at compile time.
 
 When you write something like:
 
@@ -588,16 +653,21 @@ When you write something like:
 println!("Hello, world!");
 ```
 
+```
 the Rust compiler expands it into something like:
+```
 
 ``` rust
 std::io::stdout().write_all(b"Hello, world!\n").unwrap();
 ```
 
 ```
-This is done at compile time, so there's no performance penalty at runtime for using macros instead of functions.
+This is done at compile time, so there's no performance penalty
+at runtime for using macros instead of functions.
 
-The println! macro also supports formatting, which allows you to interpolate values into the output string using placeholders like %d for integers or %s for strings. For example:
+The println! macro also supports formatting, which allows
+you to interpolate values into the output string using placeholders
+like %d for integers or %s for strings. For example:
 ```
 
 ``` rust
@@ -609,15 +679,20 @@ println!("{} is {} years old.", name, age);
 ```
 This would print Alice is 42 years old. to the console.
 
-So, while println! looks and behaves like a function, it's actually a macro that expands into a call to a function at compile time.
+So, while println! looks and behaves like a function, 
+it's actually a macro that expands into a call to a function at compile time.
 ```
 
 what is that unwrap method?
 
 ```
-In Rust, unwrap() is a method that's used to extract the result from a Result or Option object, while also handling any errors that might occur.
+In Rust, unwrap() is a method that's used to extract 
+the result from a Result or Option object, while also handling any errors that might occur.
 
-For example, let's say you have a Result<i32, io::Error> object, which represents either an i32 value or an error of type io::Error. You can use unwrap() to extract the i32 value and handle any errors that might occur, like this:
+For example, let's say you have a Result<i32, io::Error> object,
+which represents either an i32 value or an error of type io::Error.
+You can use unwrap() to extract the i32 value and handle any
+errors that might occur, like this:
 ```
 
 ``` rust
@@ -626,17 +701,34 @@ let value = result.unwrap(); // Extract the i32 value or panic if there's an err
 ```
 
 ```
-If the Result object contains an i32 value, then unwrap() will return that value. But if the Result object contains an error, then unwrap() will panic and terminate the program with an error message.
+If the Result object contains an i32 value, then unwrap()
+will return that value. But if the Result object contains an error,
+then unwrap() will panic and terminate the program with an error message.
 
-The unwrap() method is useful when you're sure that the Result or Option object contains a valid value, and you want to extract it quickly and easily. However, it's important to use unwrap() carefully, because if the object does contain an error, then your program will terminate with an error message. In some cases, it might be better to handle errors explicitly using match or other error handling techniques, rather than relying on unwrap().
+The unwrap() method is useful when you're sure that the Result
+or Option object contains a valid value, and you want 
+to extract it quickly and easily. However, it's important
+to use unwrap() carefully, because if the object does contain
+an error, then your program will terminate with an error message.
+In some cases, it might be better to handle errors explicitly using match
+or other error handling techniques, rather than relying on unwrap().
 ```
 
 Any other thought regarding things I should know?
 
 ```
-One important thing to keep in mind when learning Rust is the ownership model. Rust uses a system of ownership and borrowing to manage memory and prevent common bugs like null pointers or use-after-free errors.
+One important thing to keep in mind when learning Rust 
+is the ownership model. Rust uses a system of ownership and borrowing
+to manage memory and prevent common bugs like null pointers 
+or use-after-free errors.
 
-In Rust, every value has an owner, which is responsible for deallocating the memory when the value is no longer needed. When you pass a value to a function or assign it to a variable, ownership of the value is transferred to the new owner. If you try to use a value after its owner has released it, then the Rust compiler will catch this error at compile time and prevent the program from running.
+In Rust, every value has an owner, which is responsible 
+for deallocating the memory when the value is no longer needed. 
+When you pass a value to a function or assign it to a variable,
+ownership of the value is transferred to the new owner. 
+If you try to use a value after its owner has released it,
+then the Rust compiler will catch this error at compile time
+and prevent the program from running.
 
 To work with values that you don't own, you can use borrowing, which allows you to temporarily borrow a reference to a value without taking ownership. Borrowing can be done either immutably or mutably, depending on whether you need to modify the value.
 
