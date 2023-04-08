@@ -132,7 +132,9 @@ under specific conditions using break.
 Is that a do ..while?
 
 ```
-No, Rust does not have a do..while loop like some other programming languages such as C and Java. Instead, you can achieve similar behavior using a combination of a loop and break statement. Here's an example:
+No, Rust does not have a do..while loop like some other programming languages
+such as C and Java. Instead, you can achieve similar behavior using a combination
+of a loop and break statement. Here's an example:
 ```
 
 ``` rust
