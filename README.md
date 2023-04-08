@@ -566,7 +566,7 @@ Yes, there are some other things you might want to know about
     but you can achieve similar functionality using macros. Rust macros can be used
     to generate code that wraps existing functions or types, similar to how decorators 
     work in Python. Here's an example of a simple macro that adds a debug function to a struct:
-    
+```  
 
 ``` rust
 macro_rules! debug {
