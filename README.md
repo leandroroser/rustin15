@@ -550,7 +550,9 @@ advanced features such as decorators?
 Yes, there are some other things you might want to know about
     Rust if you're coming from Python. Here are a few:
 
-    Rust is a statically typed language, which means that types are checked at compile-time rather than run-time. This can make Rust code more efficient and reliable, but it can also be more verbose than Python.
+    Rust is a statically typed language, which means that types are checked at compile-time
+    rather than run-time. This can make Rust code more efficient and reliable, but it can 
+    also be more verbose than Python.
 
     Rust has a very strong focus on memory safety and control, which means that it has some   
     features that might be unfamiliar to Python developers. For example, Rust uses a system of 
