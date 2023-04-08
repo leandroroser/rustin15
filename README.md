@@ -8,14 +8,15 @@ of this conversation?
 ```
 Sure! Here's a summary of our conversation:
 We started by discussing Rust and how it compares to Python. 
-We went over some of Rust's basic syntax and control structures,
-including if/else statements, loops, and match expressions.
-We also discussed Rust's data structures, including vectors,
-hash maps, and enums. We talked about Rust's support for functions and methods,
-including closures and the unwrap() method. We covered some advanced Rust topics, 
-including macros, ownership and borrowing, and error handling. 
+We went over some of Rust's basic syntax and control structures, including if/else 
+statements, loops, and match expressions. We also discussed Rust's data structures,
+including vectors, hash maps, and enums. We talked about Rust's support 
+for functions and methods, including closures and the unwrap() method. 
+We covered some advanced Rust topics,  including macros, ownership and borrowing,
+and error handling. 
 Finally, we ended with some additional thoughts on Rust and its advantages. 
-I hope this summary is helpful! Let me know if there's anything else I can do for you.
+I hope this summary is helpful! Let me know if there's anything else 
+I can do for you.
 ```
 
 ------------------------------------------------------------------------
