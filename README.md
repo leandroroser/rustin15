@@ -7,7 +7,15 @@ of this conversation?
 
 ```
 Sure! Here's a summary of our conversation:
-We started by discussing Rust and how it compares to Python. We went over some of Rust's basic syntax and control structures, including if/else statements, loops, and match expressions. We also discussed Rust's data structures, including vectors, hash maps, and enums. We talked about Rust's support for functions and methods, including closures and the unwrap() method. We covered some advanced Rust topics, including macros, ownership and borrowing, and error handling. Finally, we ended with some additional thoughts on Rust and its advantages. I hope this summary is helpful! Let me know if there's anything else I can do for you.
+We started by discussing Rust and how it compares to Python. 
+We went over some of Rust's basic syntax and control structures,
+including if/else statements, loops, and match expressions.
+We also discussed Rust's data structures, including vectors,
+hash maps, and enums. We talked about Rust's support for functions and methods,
+including closures and the unwrap() method. We covered some advanced Rust topics, 
+including macros, ownership and borrowing, and error handling. 
+Finally, we ended with some additional thoughts on Rust and its advantages. 
+I hope this summary is helpful! Let me know if there's anything else I can do for you.
 ```
 
 ------------------------------------------------------------------------
@@ -114,7 +122,11 @@ Counter value: 4
 ```
 
 ```
-Note that you should use the loop statement with caution, as an infinite loop that doesn't exit can cause your program to hang or crash. However, in certain cases, such as when implementing event loops or waiting for user input, it can be useful to create an infinite loop that only exits under specific conditions using break.
+Note that you should use the loop statement with caution, 
+as an infinite loop that doesn't exit can cause your program to hang or crash. 
+However, in certain cases, such as when implementing event loops or waiting for user input,
+it can be useful to create an infinite loop that only exits 
+under specific conditions using break.
 ```
 
 Is that a do ..while?
@@ -135,9 +147,15 @@ loop {
 ```
 
 ```
-In this example, we start with an initial value of i = 0, and then enter a loop block. Inside the loop, we print the value of i, increment it by 1, and then check if it has reached a value of 5. If i is equal to 5, we use the break statement to exit the loop.
+In this example, we start with an initial value of i = 0, and then enter a loop block. 
+Inside the loop, we print the value of i, increment it by 1, and then check
+if it has reached a value of 5. If i is equal to 5, we use the break statement
+to exit the loop.
 
-This achieves the same result as a do..while loop in other languages, where the loop body is executed at least once before checking the loop condition. In Rust, however, we explicitly check the condition at the end of each iteration using the if statement.
+This achieves the same result as a do..while loop in other languages, 
+where the loop body is executed at least once before checking the loop condition.
+In Rust, however, we explicitly check the condition at the end of each iteration
+using the if statement.
 
 I hope that clears things up! Let me know if you have any more questions.
 ```
@@ -145,15 +163,23 @@ I hope that clears things up! Let me know if you have any more questions.
 So, that is a kind of “do..while”, right?
 
 ```
-Yes, you can think of the Rust code I showed you earlier as a way to achieve the same behavior as a do..while loop in other programming languages. In a do..while loop, the loop body is executed at least once, and then the loop condition is checked. In the Rust code I showed you, we use a loop statement to create an infinite loop, and then check the condition at the end of each iteration using an if statement. This allows us to achieve the same behavior as a do..while loop.
+Yes, you can think of the Rust code I showed you earlier as a way to achieve 
+the same behavior as a do..while loop in other programming languages. 
+In a do..while loop, the loop body is executed at least once, and then the loop condition
+is checked. In the Rust code I showed you, we use a loop statement to create an infinite loop,
+and then check the condition at the end of each iteration using an if statement. 
+This allows us to achieve the same behavior as a do..while loop.
 
-However, it's worth noting that Rust does not have a do..while loop construct like some other programming languages, so it's important to understand how to achieve the same behavior using Rust's available control structures.
+However, it's worth noting that Rust does not have a do..while loop construct
+like some other programming languages, so it's important to understand
+how to achieve the same behavior using Rust's available control structures.
 ```
 
 Any other control structure to take into account?
 
 ```
-Yes, Rust provides several other control structures that you may find useful in your programming. Here are a few examples:
+Yes, Rust provides several other control structures that you may find useful
+in your programming. Here are a few examples:
 
 if..else
 The if..else statement allows you to execute different code blocks depending on a boolean condition:
@@ -172,10 +198,12 @@ if x < 0 {
 ```
 
 ```
-In this example, we check whether the value of x is negative, positive, or zero, and print a corresponding message. The else if and else branches are optional.
+In this example, we check whether the value of x is negative, positive, or zero, 
+and print a corresponding message. The else if and else branches are optional.
 
 match
-The match statement allows you to match a value against a set of patterns and execute corresponding code blocks:
+The match statement allows you to match a value against a set of patterns and execute
+corresponding code blocks:
 ```
 
 ``` rust
@@ -190,10 +218,15 @@ match x {
 ```
 
 ```
-In this example, we match the value of x against a set of patterns. If x is equal to 1, we print a message saying so. If x is equal to 2, we print a different message. If x is equal to 3, 4, or 5, we print a third message. Finally, if x does not match any of these patterns, we print a generic message using the _ placeholder.
+In this example, we match the value of x against a set of patterns.
+If x is equal to 1, we print a message saying so. If x is equal to 2,
+we print a different message. If x is equal to 3, 4, or 5, we print a third message. 
+Finally, if x does not match any of these patterns, we print a generic message using
+the _ placeholder.
 
 continue
-The continue statement is used inside a loop to skip the current iteration and move on to the next one:
+The continue statement is used inside a loop to skip the current iteration and move
+on to the next one:
 ```
 
 ``` rust
@@ -206,7 +239,8 @@ for i in 0..5 {
 ```
 
 ```
-In this example, we use the continue statement inside a for loop to skip the iteration where i is equal to 2. This results in the following output:
+In this example, we use the continue statement inside a for loop to skip the iteration
+where i is equal to 2. This results in the following output:
 ```
 
 ``` rust
@@ -217,16 +251,19 @@ Value of i: 4
 ```
 
 ```
-I hope this gives you an idea of some of the other control structures available in Rust. Let me know if you have any more questions!
+I hope this gives you an idea of some of the other control structures available in Rust.
+Let me know if you have any more questions!
 ```
 
 These are all the control structures?
 
 ```
-No, Rust provides several other control structures in addition to the ones I mentioned earlier. Here are a few more examples:
+No, Rust provides several other control structures in addition to the ones 
+I mentioned earlier. Here are a few more examples:
 
 for..in
-The for..in loop is used to iterate over a collection of items, such as an array or a vector:
+The for..in loop is used to iterate over a collection of items, 
+such as an array or a vector:
 ```
 
 ``` rust
@@ -253,10 +290,15 @@ while let Some(number) = numbers.pop() {
 ```
 
 ```
-In this example, we use a while..let loop to repeatedly pop a number from the end of a vector until the vector is empty. The pop method returns an Option<T> value, which we destructure using the while..let syntax. If the value is Some(number), we bind the value of number to a variable and print it. If the value is None, the loop terminates.
+In this example, we use a while..let loop to repeatedly pop a number from the end
+of a vector until the vector is empty. The pop method returns an Option<T> value,
+which we destructure using the while..let syntax. If the value is Some(number), 
+we bind the value of number to a variable and print it. If the value is None, 
+the loop terminates.
 
 if let
-The if let statement is similar to the while..let loop, but allows you to conditionally execute code if a value matches a pattern:
+The if let statement is similar to the while..let loop, but allows you to conditionally 
+execute code if a value matches a pattern:
 ```
 
 ``` rust
@@ -268,19 +310,25 @@ if let Some(number) = some_value {
 ```
 
 ```
-In this example, we use an if let statement to check whether some_value is equal to Some(number), and print the value of number if it is. If some_value is equal to None, the code block is not executed.
+In this example, we use an if let statement to check whether some_value
+is equal to Some(number), and print the value of number if it is. 
+If some_value is equal to None, the code block is not executed.
 
-I hope this gives you a more comprehensive overview of the control structures available in Rust. Let me know if you have any more questions!
+I hope this gives you a more comprehensive overview of the control structures
+available in Rust. Let me know if you have any more questions!
 ```
 
 Amazing. Now show me data structures. I need a quick summary of data
 sturctures in rust.
 
 ```
-Sure! Rust provides several data structures that you can use to store and manipulate data. Here are some of the most common ones:
+Sure! Rust provides several data structures that you can use to store and manipulate data.
+Here are some of the most common ones:
 
 Vectors
-Vectors, or dynamic arrays, are one of the most commonly used data structures in Rust. They allow you to store a collection of items of the same type and dynamically resize the collection as needed:
+Vectors, or dynamic arrays, are one of the most commonly used data structures in Rust. 
+They allow you to store a collection of items of the same type and dynamically resize
+the collection as needed:
 ```
 
 ``` rust
@@ -289,10 +337,12 @@ v.push(4);
 ```
 
 ```
-In this example, we create a vector containing the values 1, 2, and 3. We then use the push method to add the value 4 to the end of the vector.
+In this example, we create a vector containing the values 1, 2, and 3. 
+We then use the push method to add the value 4 to the end of the vector.
 
 Arrays
-Arrays are fixed-size collections of items of the same type. Unlike vectors, their size is determined at compile-time and cannot be changed at runtime:
+Arrays are fixed-size collections of items of the same type. Unlike vectors, 
+their size is determined at compile-time and cannot be changed at runtime:
 ```
 
 ``` rust
@@ -300,10 +350,12 @@ let a = [1, 2, 3, 4, 5];
 ```
 
 ```
-In this example, we create an array containing the values 1, 2, 3, 4, and 5. The size of the array is determined by the number of values in the initializer.
+In this example, we create an array containing the values 1, 2, 3, 4, and 5.
+The size of the array is determined by the number of values in the initializer.
 
 Slices
-Slices are references to a contiguous sequence of elements in a data structure. They are commonly used to pass subsets of arrays or vectors to functions:
+Slices are references to a contiguous sequence of elements in a data structure. 
+They are commonly used to pass subsets of arrays or vectors to functions:
 ```
 
 ``` rust
@@ -312,10 +364,14 @@ let slice = &a[1..4];
 ```
 
 ```
-In this example, we create a slice containing the values 2, 3, and 4 from the array a. The .. notation specifies a range of indices, and the & operator is used to create a reference to the slice.
+In this example, we create a slice containing the values 2, 3, and 4 from the array a.
+The .. notation specifies a range of indices, and the & operator is used to create
+a reference to the slice.
 
 Strings
-Strings in Rust are UTF-8 encoded and are represented as a collection of bytes. Rust provides several string types, including String, which is a growable string, and &str, which is an immutable reference to a string slice:
+Strings in Rust are UTF-8 encoded and are represented as a collection of bytes. 
+Rust provides several string types, including String, which is a growable string,
+and &str, which is an immutable reference to a string slice:
 ```
 
 ``` rust
@@ -325,10 +381,14 @@ let s3 = format!("{} {}", s1, s2);
 ```
 
 ```
-In this example, we create a String containing the value "hello", a string slice containing the value "world", and a new String created by concatenating s1 and s2 using the format! macro.
+In this example, we create a String containing the value "hello", 
+a string slice containing the value "world", and a new String created
+by concatenating s1 and s2 using the format! macro.
 
 Hash Maps
-Hash maps are collections of key-value pairs, where each key is unique and maps to a corresponding value. Rust's HashMap type is implemented using a hash table, which provides fast lookups and insertions:
+Hash maps are collections of key-value pairs, where each key is unique and maps
+to a corresponding value. Rust's HashMap type is implemented using a hash table, 
+which provides fast lookups and insertions:
 ```
 
 ``` rust
@@ -341,16 +401,21 @@ map.insert("orange", 5);
 ```
 
 ```
-In this example, we create a new HashMap, and then insert several key-value pairs into it using the insert method.
+In this example, we create a new HashMap, and then insert several key-value pairs
+into it using the insert method.
 
-These are just a few examples of the data structures available in Rust. Rust also provides many other data structures, including tuples, structs, enums, and more. Let me know if you have any more questions!
+These are just a few examples of the data structures available in Rust. 
+Rust also provides many other data structures, including tuples, structs, 
+enums, and more. Let me know if you have any more questions!
 ```
 
 Now I want to have a quick overview of methods. Methods for strings,
 numbers, vectors, hash maps
 
 ```
-Sure! In Rust, methods are functions that are associated with a particular data type. Here are some examples of methods that are commonly used with strings, numbers, vectors, and hash maps:
+Sure! In Rust, methods are functions that are associated with a particular data type.
+Here are some examples of methods that are commonly used with strings, numbers, 
+vectors, and hash maps:
 ```
 
 ``` rust
@@ -482,11 +547,19 @@ Yes, there are some other things you might want to know about
 
     Rust is a statically typed language, which means that types are checked at compile-time rather than run-time. This can make Rust code more efficient and reliable, but it can also be more verbose than Python.
 
-    Rust has a very strong focus on memory safety and control, which means that it has some features that might be unfamiliar to Python developers. For example, Rust uses a system of ownership and borrowing to ensure that memory is managed correctly and efficiently.
+    Rust has a very strong focus on memory safety and control, which means that it has some   
+    features that might be unfamiliar to Python developers. For example, Rust uses a system of 
+    ownership and borrowing to ensure that memory is managed correctly and efficiently.
 
-    Rust has a powerful macro system that can be used to generate code at compile-time. Macros can be used to implement advanced features like decorators, but they can also be used for many other purposes, such as code generation and metaprogramming.
+    Rust has a powerful macro system that can be used to generate code at compile-time. 
+    Macros can be used to implement advanced features like decorators, but they can also
+    be used for many other purposes, such as code generation and metaprogramming.
 
-    Regarding decorators, Rust doesn't have a direct equivalent to Python decorators, but you can achieve similar functionality using macros. Rust macros can be used to generate code that wraps existing functions or types, similar to how decorators work in Python. Here's an example of a simple macro that adds a debug function to a struct:
+    Regarding decorators, Rust doesn't have a direct equivalent to Python decorators,
+    but you can achieve similar functionality using macros. Rust macros can be used
+    to generate code that wraps existing functions or types, similar to how decorators 
+    work in Python. Here's an example of a simple macro that adds a debug function to a struct:
+    
 
 ``` rust
 macro_rules! debug {
