@@ -1,4 +1,4 @@
-# A 5' cofee with ChatGPT about Rust, from a Pythonista perspective
+# A 5' cofee with ChatGPT about Rust, from a Pythonista perspective. Like Plato's dialogs with transistors. 
 
 ### Starting from the end
 
