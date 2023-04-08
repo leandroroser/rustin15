@@ -163,20 +163,6 @@ using the if statement.
 I hope that clears things up! Let me know if you have any more questions.
 ```
 
-So, that is a kind of “do..while”, right?
-
-```
-Yes, you can think of the Rust code I showed you earlier as a way to achieve 
-the same behavior as a do..while loop in other programming languages. 
-In a do..while loop, the loop body is executed at least once, and then the loop condition
-is checked. In the Rust code I showed you, we use a loop statement to create an infinite loop,
-and then check the condition at the end of each iteration using an if statement. 
-This allows us to achieve the same behavior as a do..while loop.
-
-However, it's worth noting that Rust does not have a do..while loop construct
-like some other programming languages, so it's important to understand
-how to achieve the same behavior using Rust's available control structures.
-```
 
 Any other control structure to take into account?
 
@@ -502,7 +488,7 @@ These are just a few examples of the many methods available
 for Rust's standard library types. Let me know if you have any more questions!
 ```
 
-any equivalent to lambda functions in rust?
+Any equivalent to lambda functions in rust?
 
 ```
 Yes, Rust has closures, which are similar to lambda functions 
@@ -659,11 +645,12 @@ and they are often used in place of classes in performance-critical code.
 ```
 
 Nice. I’m still trying to understand the use of vec! after declaring an
-object vec of type Vec. Why the “!” The vec! macro is used to create a
-new Vec object with initial values. It’s a convenient way to create a
-new vector and initialize its elements at the same time.
+object vec of type Vec. Why the “!” 
 
 ```
+The vec! macro is used to create a
+new Vec object with initial values. It’s a convenient way to create a
+new vector and initialize its elements at the same time.
 The ! after vec is part of the syntax of the macro. In Rust, 
 macros are invoked using an exclamation mark (!) after the macro name,
 like vec!(1, 2, 3) or println!("Hello, world!").
@@ -687,7 +674,7 @@ for that type, or use a different method of initializing the vector
 (such as calling push or insert after creating an empty vector).
 ```
 
-which are macros I should remember?
+Which are macros I should remember?
 
 ```
 There are many useful macros in Rust, but here are 
@@ -721,7 +708,7 @@ These are just a few examples of useful Rust macros.
 There are many others that you may find useful depending on your needs.
 ```
 
-so for example println! is another function under the hood?
+So for example println! is another function under the hood?
 
 ```
 Yes, that's correct! In Rust, println! is actually a macro
