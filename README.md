@@ -751,7 +751,7 @@ So, while println! looks and behaves like a function,
 it's actually a macro that expands into a call to a function at compile time.
 ```
 
-what is that unwrap method?
+What is that unwrap method for?
 
 ```
 In Rust, unwrap() is a method that's used to extract 
