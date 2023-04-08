@@ -810,7 +810,14 @@ If you try to use a value after its owner has released it,
 then the Rust compiler will catch this error at compile time
 and prevent the program from running.
 
-To work with values that you don't own, you can use borrowing, which allows you to temporarily borrow a reference to a value without taking ownership. Borrowing can be done either immutably or mutably, depending on whether you need to modify the value.
+To work with values that you don't own, you can use borrowing, which allows you
+to temporarily borrow a reference to a value without taking ownership. 
+Borrowing can be done either immutably or mutably, depending on whether you need
+to modify the value.
 
-While Rust's ownership and borrowing system can be a bit challenging to learn at first, it has several advantages over traditional memory management approaches. By preventing common memory-related bugs at compile time, Rust code is generally more reliable and easier to maintain. Additionally, Rust's ownership and borrowing system can help optimize performance by minimizing unnecessary memory allocations and deallocations.
+While Rust's ownership and borrowing system can be a bit challenging to learn at first,
+it has several advantages over traditional memory management approaches.
+By preventing common memory-related bugs at compile time, Rust code is generally
+more reliable and easier to maintain. Additionally, Rust's ownership and borrowing system
+can help optimize performance by minimizing unnecessary memory allocations and deallocations.
 ```
