@@ -278,10 +278,12 @@ for number in numbers {
 ```
 
 ```
-In this example, we create a vector of numbers, and then use a for..in loop to iterate over the vector and print each number.
+In this example, we create a vector of numbers, and then use a for..in loop to
+iterate over the vector and print each number.
 
 while..let
-The while..let loop is similar to a while loop, but allows you to destructure a value and bind its parts to variables:
+The while..let loop is similar to a while loop, but allows you to destructure
+a value and bind its parts to variables:
 ```
 
 ``` rust
