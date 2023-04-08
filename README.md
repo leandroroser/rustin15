@@ -184,7 +184,8 @@ Yes, Rust provides several other control structures that you may find useful
 in your programming. Here are a few examples:
 
 if..else
-The if..else statement allows you to execute different code blocks depending on a boolean condition:
+The if..else statement allows you to execute different code blocks 
+depending on a boolean condition:
 ```
 
 ``` rust
