@@ -45,7 +45,7 @@ Hey
 Hello! How can I assist you today?
 ```
 
-I need a quick overview of the Rust language.I come from
+I need a quick overview of the Rust language. I come from
 Python. I want to transfer my Python knowledge into Rust. I would like to know
 how to create for loops, while loops, and other control structures. Can you
 show me that?
