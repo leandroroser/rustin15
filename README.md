@@ -1,7 +1,8 @@
 # A 15' coffee with ChatGPT where we talked about Rust, from a Python perspective. Like Plato's dialogues, but with hashmaps. 
 
-Disclainer: this is a conversation with minor style edits, so take it at it is, a conversation with chatGPT that might contain
-thing that are not exact. But it has a good educational value to start working with Rust in 1 hour or so.
+Disclaimer: This conversation has undergone minor style edits, so please take it as it is - a conversation
+with ChatGPT that may contain inaccuracies. However, it holds good educational value
+to get started with Rust in just one hour or so.
 
 Note: If you are using Rust for the very first time, a quick option is testing the language flavor
 in a REPL using the evcxr kernel and a Jupyter notebook:
