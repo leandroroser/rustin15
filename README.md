@@ -263,7 +263,7 @@ I hope this gives you an idea of some of the other control structures available 
 Let me know if you have any more questions!
 ```
 
-These are all the available control structures?
+Those are all the available control structures?
 
 ```
 No, Rust provides several other control structures in addition to the ones 
