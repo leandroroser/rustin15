@@ -420,6 +420,7 @@ vectors, and hash maps:
 
 ``` rust
 // Methods for Strings
+
 let s = String::from("hello world");
 
 // Returns the length of the string
@@ -436,7 +437,9 @@ let contains_hello = s.contains("hello");
 
 // Splits the string into substrings at the given separator
 let words: Vec<&str> = s.split(" ").collect();
-Methods for Numbers
+
+
+// Methods for Numbers
 
 let x = 42;
 
@@ -454,7 +457,9 @@ let pow = x.pow(2);
 
 // Returns the square root of the value
 let sqrt = x.sqrt();
-Methods for Vectors
+
+
+// Methods for Vectors
 
 let v = vec![1, 2, 3];
 
@@ -472,7 +477,9 @@ v.push(4);
 
 // Removes the last element from the vector and returns it
 let popped = v.pop();
-Methods for Hash Maps
+
+
+// Methods for Hash Maps
 
 use std::collections::HashMap;
 
