@@ -803,27 +803,186 @@ or other error handling techniques, rather than relying on unwrap().
 Any other thought regarding things I should know?
 
 ```
-One important thing to keep in mind when learning Rust 
-is the ownership model. Rust uses a system of ownership and borrowing
-to manage memory and prevent common bugs like null pointers 
-or use-after-free errors.
+Yes, there are some other things you might want to know about Rust if you're coming from Python. Here are a few:
 
-In Rust, every value has an owner, which is responsible 
-for deallocating the memory when the value is no longer needed. 
-When you pass a value to a function or assign it to a variable,
-ownership of the value is transferred to the new owner. 
-If you try to use a value after its owner has released it,
-then the Rust compiler will catch this error at compile time
-and prevent the program from running.
+Rust is a statically typed language, which means that types are checked at compile-time rather than run-time.
+This can make Rust code more efficient and reliable, but it can also be more verbose than Python.
+Rust has a very strong focus on memory safety and control, which means that it has some features
+that might be unfamiliar to Python developers. For example, Rust uses a system of ownership and borrowing 
+to ensure that memory is managed correctly and efficiently.
+Rust has a powerful macro system that can be used to generate code at compile-time. Macros can be used
+to implement advanced features like decorators, but they can also be used for many other purposes, 
+such as code generation and metaprogramming.
+Regarding decorators, Rust doesn't have a direct equivalent to Python decorators, but there are some 
+similar concepts. For example, Rust has attributes, which are similar to decorators in that they allow
+you to annotate items in your code with additional metadata. Attributes can be used to control how functions,
+structs, enums, and other items are compiled, or to provide additional information to the Rust compiler.
 
-To work with values that you don't own, you can use borrowing, which allows you
-to temporarily borrow a reference to a value without taking ownership. 
-Borrowing can be done either immutably or mutably, depending on whether you need
-to modify the value.
+Rust also has procedural macros, which are similar to Python decorators in that they allow you to modify
+the behavior of functions and other items at compile-time. Procedural macros can be used to implement custom
+derive macros, which are similar to Python decorators that use the @staticmethod or @classmethod syntax. 
+Custom derive macros can be used to generate code for structs, enums, and other items based on their structure and properties.
 
-While Rust's ownership and borrowing system can be a bit challenging to learn at first,
-it has several advantages over traditional memory management approaches.
-By preventing common memory-related bugs at compile time, Rust code is generally
-more reliable and easier to maintain. Additionally, Rust's ownership and borrowing system
-can help optimize performance by minimizing unnecessary memory allocations and deallocations.
+Here are some examples of Rust's ownership system:
 ```
+
+``` rust
+// Example 1: Transfer of Ownership
+
+rust
+Copy code
+fn main() {
+    let s1 = String::from("hello");
+    let s2 = s1;
+    println!("{}", s2);
+}
+``` 
+
+``` 
+In this example, s1 is created and assigned the value "hello". Then, s2 is assigned the value of s1. However, the ownership of s1 is transferred to s2. Therefore, s1 is no longer valid after this assignment.
+``` 
+
+``` rust
+// Example 2: Borrowing
+
+fn main() {
+    let s1 = String::from("hello");
+    let len = calculate_length(&s1);
+    println!("The length of '{}' is {}.", s1, len);
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+``` 
+
+``` 
+In this example, a reference to s1 is passed to the calculate_length function using the & operator. The function calculate_length borrows the reference to s1 and returns its length without taking ownership. Therefore, s1 remains valid after the function call.
+``` 
+
+Which are best practices in Rust?
+
+``` 
+Follow the Rust programming style guide: Rust has an official style guide that outlines how code should be formatted, structured, and documented. Following this guide can help make your code more readable and easier to maintain.
+
+Use Rust's ownership model: Rust's ownership model helps ensure memory safety and prevent common bugs like null pointer dereferences and use-after-free errors. Make sure to use Rust's ownership features like borrowing and lifetimes to manage memory correctly.
+
+Write tests: Rust has a built-in testing framework that makes it easy to write tests for your code. Writing tests can help catch bugs early and ensure that your code is working correctly.
+
+Use Rust's standard library: Rust's standard library contains many useful data types and functions that can save you time and prevent bugs. For example, use the Option and Result types instead of using null pointers or throwing exceptions.
+
+Avoid unwrap() and panic!() in production code: While unwrap() and panic!() can be useful for prototyping and testing, they should be avoided in production code. Instead, use match statements or if let expressions to handle errors and unexpected conditions.
+
+Use Rust's type system to prevent bugs: Rust's type system can help prevent bugs by catching type mismatches and other errors at compile time. For example, use Rust's enum type to represent a finite set of possible values.
+
+Use Cargo to manage dependencies: Rust's package manager, Cargo, makes it easy to manage dependencies and build your project. Use cargo build to build your project, cargo test to run tests, and cargo doc to generate documentation.
+
+Document your code: Rust's doc comments make it easy to generate documentation for your code. Make sure to document your functions, types, and modules so that other developers can understand how to use your code.
+
+Use match instead of if for pattern matching: Rust's match statement is more powerful than if statements because it allows you to pattern match on multiple values at once. This can help make your code more concise and expressive.
+
+Use const and static for constants: Rust's const and static keywords can be used to define compile-time constants. This can help improve performance and prevent bugs caused by changing values accidentally.
+
+These are just a few best practices in Rust. By following these guidelines and continuing to learn more about Rust's features and ecosystem, you can write high-quality Rust code that is both performant and safe.
+``` 
+
+What about static typing if i come from python and don't use with frequency type hints? Can you show me examples?
+
+``` 
+Sure! In Rust, all variables have to be declared with a type, and the compiler checks that the types are used correctly throughout the program. This is called "static typing".
+
+Here's an example of how static typing works in Rust:
+``` 
+
+``` rust
+fn main() {
+    let x = 5; // x is declared with type i32
+    let y = "hello"; // y is declared with type &str
+
+    let z = x + y; // this will cause a compile-time error, because x and y have different types
+}
+``` 
+
+``` 
+In this example, x is declared with type i32, which is a 32-bit signed integer, while y is declared with type &str, which is a reference to a string. The + operator is used to concatenate strings in Rust, but it can't be used to add an integer and a string.
+
+In Python, you can use type hints to specify the types of variables and function parameters, but they are optional and not enforced by the interpreter. Here's an example of how type hints work in Python:
+``` 
+
+``` rust
+def add_numbers(x: int, y: int) -> int:
+    return x + y
+
+result = add_numbers(5, "hello") # this will not cause a compile-time error, but it will cause a runtime error
+``` 
+
+``` 
+In this example, the add_numbers function takes two integer parameters, x and y, and returns an integer result. The type hints indicate that x and y should be integers, but if we call the function with a string instead of an integer for y, it will cause a runtime error. Unlike Rust, Python does not enforce the types specified in the type hints, so it's up to the programmer to make sure that the types are used correctly.
+
+In summary, static typing in Rust helps catch errors at compile time, while type hints in Python are optional and do not enforce type correctness at runtime.
+``` 
+
+But you are not declaring types in the code
+
+``` 
+In Rust, you don't always have to explicitly declare types in your code because the compiler can often infer them based on context. However, Rust is still a statically-typed language, which means that every value has a type that is determined at compile time and cannot change at runtime.
+
+Let me give you an example. Consider the following Rust function:
+``` 
+
+``` rust
+fn add(x: i32, y: i32) -> i32 {
+    x + y
+}
+``` 
+
+``` 
+This function takes two i32 values as arguments and returns their sum as an i32. Here, we have explicitly declared the types of the function parameters and return value using the : i32 notation. However, we could also have written the same function without explicit type annotations:
+``` 
+
+``` rust
+fn add(x, y) {
+    x + y
+}
+``` 
+
+``` 
+In this version of the function, the Rust compiler would infer that x and y are both of type i32 based on the fact that we are performing addition with them, and would infer that the return value is also an i32 based on the fact that we are returning the result of the addition.
+
+It's worth noting that while Rust's type inference can save you some typing, it's generally considered good practice to provide type annotations in your code whenever it makes the code clearer and easier to understand. Additionally, Rust's type system provides a number of benefits, such as preventing common programming errors at compile time and improving the performance of your code, so it's worth investing some time in learning how to use it effectively.
+``` 
+
+``` 
+What abourt being more verbose with types?
+``` 
+
+``` 
+In Rust, you can choose to be more verbose with types if you prefer. For example, instead of writing:
+``` 
+
+``` rust
+let x = 5;
+``` 
+
+``` 
+You could write:
+``` 
+
+``` rust
+let x: i32 = 5;
+``` 
+
+``` 
+This explicitly declares that x is an i32 (a 32-bit signed integer). Similarly, you could write:
+``` 
+
+``` rust
+let name: String = String::from("Alice");
+``` 
+
+``` 
+This declares that name is a String type, and sets its initial value to a new String instance containing the text "Alice".
+
+Using explicit type annotations can make your code more clear and easier to read, especially in situations where the type might not be immediately obvious from the context. However, Rust's type inference is generally very good, so you may find that you don't need to be as verbose with types as you might be in other languages.
+``` 
+
