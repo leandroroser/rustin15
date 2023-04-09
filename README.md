@@ -946,7 +946,7 @@ In summary, static typing in Rust helps catch errors at compile time, while type
 and do not enforce type correctness at runtime.
 ``` 
 
-But you are not declaring types in the code
+But you are not declaring types in the first code chunk
 
 ``` 
 In Rust, you don't always have to explicitly declare types in your code because the compiler can often infer
