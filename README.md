@@ -1,4 +1,4 @@
-# A 5' coffee with ChatGPT where we talked about Rust, from a Pythonista perspective. Like Plato's dialogs, but with hashmaps. 
+# A 15' coffee with ChatGPT where we talked about Rust, from a Pythonista perspective. Like Plato's dialogs, but with hashmaps. 
 
 
 Note: If you are using Rust for the very first time, a quick option is testing the language flavor in a REPL using the evcxr kernel and a Jupyter notebook:
