@@ -1033,7 +1033,7 @@ type inference is generally very good, so you may find that you don't need to be
 types as you might be in other languages.
 ``` 
 
-Mutability and inmutability in rust. Difference with Python
+Mutability and inmutability in rust. Differences with Python.
 
 ``` 
 n Rust, mutability and immutability refer to the ability to change the value of a variable. A variable that is declared as mutable can be changed, while a variable that is declared as immutable cannot be changed after it has been assigned a value.
