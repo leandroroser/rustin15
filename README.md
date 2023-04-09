@@ -492,6 +492,9 @@ let removed = map.remove("banana");
 
 // Returns true if the map contains the given key
 let contains_apple = map.contains_key("apple");
+```
+
+```
 These are just a few examples of the many methods available 
 for Rust's standard library types. Let me know if you have any more questions!
 ```
