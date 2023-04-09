@@ -3,7 +3,8 @@
 
 Disclaimer: This conversation has undergone minor style edits, so please take it as it is - a conversation
 with ChatGPT that may contain inaccuracies. However, it holds good educational value
-to get started with Rust in just one hour or so if you have experience with Python.
+to get started with Rust in just one hour or so if you have experience with Python. Then you can use some 
+official materials: https://doc.rust-lang.org/book/
 
 Note: If you are using Rust for the very first time, a quick option is testing the language flavor
 in a REPL using the evcxr kernel and a Jupyter notebook:
@@ -1032,3 +1033,25 @@ type inference is generally very good, so you may find that you don't need to be
 types as you might be in other languages.
 ``` 
 
+Mutability and inmutability in rust. Difference with Python
+
+``` 
+n Rust, mutability and immutability refer to the ability to change the value of a variable. A variable that is declared as mutable can be changed, while a variable that is declared as immutable cannot be changed after it has been assigned a value.
+
+The main difference with Python is that Rust is a statically-typed language, which means that the type of a variable must be declared before it can be used. In Python, on the other hand, types can be dynamically inferred at runtime.
+
+In terms of mutability and immutability, Python also has mutable and immutable data types. For example, lists in Python are mutable, while tuples are immutable. However, Python does not require explicit declaration of mutability or immutability when declaring a variable.
+
+``` 
+
+Show me examples
+
+``` rust
+// declaring a mutable variable x
+let mut x = 5;
+x = 10; // we can reassign a new value to the mutable variable
+
+// declaring an immutable variable y
+let y = 5;
+y = 10; // this will result in a compiler error, because y is immutable
+``` 
