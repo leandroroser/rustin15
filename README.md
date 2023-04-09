@@ -44,9 +44,9 @@ Hey
 Hello! How can I assist you today?
 ```
 
-I need a quick overview of the Rust language. As you know, I know
-Python. I want to transfer my Python knowledge into Rust. I want to know
-how to create for loops, while, and other control structures. Can you
+I need a quick overview of the Rust language.I come from
+Python. I want to transfer my Python knowledge into Rust. I would like to know
+how to create for loops, while loops, and other control structures. Can you
 show me that?
 
 ```
@@ -262,7 +262,7 @@ I hope this gives you an idea of some of the other control structures available 
 Let me know if you have any more questions!
 ```
 
-These are all the control structures?
+These are all the available control structures?
 
 ```
 No, Rust provides several other control structures in addition to the ones 
@@ -328,7 +328,7 @@ available in Rust. Let me know if you have any more questions!
 ```
 
 Amazing. Now show me data structures. I need a quick summary of data
-sturctures in rust.
+sturctures in Rust.
 
 ```
 Sure! Rust provides several data structures that you can use to store and manipulate data.
@@ -515,7 +515,7 @@ These are just a few examples of the many methods available
 for Rust's standard library types. Let me know if you have any more questions!
 ```
 
-Any equivalent to lambda functions in rust?
+Any equivalent to lambda functions in Rust?
 
 ```
 Yes, Rust has closures, which are similar to lambda functions 
@@ -556,7 +556,7 @@ Closures are a powerful tool in Rust, and they are often used
 in combination with iterators to perform complex operations on collections.
 ```
 
-Any other thing I should know if I am coming from python? what about
+Any other thing I should know if I am coming from Python? what about
 advanced features such as decorators?
 
 
@@ -870,7 +870,7 @@ The function calculate_length borrows the reference to s1 and returns its length
 Therefore, s1 remains valid after the function call.
 ``` 
 
-Which are best practices in Rust?
+Can you list Rust best practices?
 
 ``` 
 - Follow the Rust programming style guide: Rust has an official style guide that outlines 
@@ -911,7 +911,7 @@ This can help improve performance and prevent bugs caused by changing values acc
 Rust's features and ecosystem, you can write high-quality Rust code that is both performant and safe.
 ``` 
 
-What about static typing if i come from python and don't use with frequency type hints? Can you show me examples?
+What about static typing if I come from Python and don't use with frequency type hints? Can you show me examples?
 
 ``` 
 Sure! In Rust, all variables have to be declared with a type, and the compiler checks that the types are
@@ -995,9 +995,7 @@ programming errors at compile time and improving the performance of your code, s
 some time in learning how to use it effectively.
 ``` 
 
-``` 
 What about being more verbose with types?
-``` 
 
 ``` 
 In Rust, you can choose to be more verbose with types if you prefer. For example, instead of writing:
