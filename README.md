@@ -1,5 +1,13 @@
 # A 5' coffee with ChatGPT where we talked about Rust, from a Pythonista perspective. Like Plato's dialogs, but with hashmaps. 
 
+
+Note: If you are using Rust for the very first time, a quick option is testing the language flavor in a REPL using the evcxr kernel and a Jupyter notebook:
+
+1) Install Rust and cargo: https://doc.rust-lang.org/cargo/getting-started/installation.html
+2) Install evcxr: https://github.com/evcxr/evcxr/blob/main/evcxr_jupyter/README.md
+3) Enjoy.
+
+
 ### Starting from the end
 
 Thanks, this information was really useful. Can you generate a summary
