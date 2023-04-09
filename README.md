@@ -1036,11 +1036,17 @@ types as you might be in other languages.
 Mutability and inmutability in rust. Differences with Python.
 
 ``` 
-n Rust, mutability and immutability refer to the ability to change the value of a variable. A variable that is declared as mutable can be changed, while a variable that is declared as immutable cannot be changed after it has been assigned a value.
+In Rust, mutability and immutability refer to the ability to change the value of a variable. 
+A variable that is declared as mutable can be changed, while a variable that is declared
+as immutable cannot be changed after it has been assigned a value.
 
-The main difference with Python is that Rust is a statically-typed language, which means that the type of a variable must be declared before it can be used. In Python, on the other hand, types can be dynamically inferred at runtime.
+The main difference with Python is that Rust is a statically-typed language, which means
+that the type of a variable must be declared before it can be used. In Python, on the other hand,
+types can be dynamically inferred at runtime.
 
-In terms of mutability and immutability, Python also has mutable and immutable data types. For example, lists in Python are mutable, while tuples are immutable. However, Python does not require explicit declaration of mutability or immutability when declaring a variable.
+In terms of mutability and immutability, Python also has mutable and immutable data types.
+For example, lists in Python are mutable, while tuples are immutable. However, 
+Python does not require explicit declaration of mutability or immutability when declaring a variable.
 
 ``` 
 
