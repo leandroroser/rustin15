@@ -2,7 +2,7 @@
 
 Disclaimer: This conversation has undergone minor style edits, so please take it as it is - a conversation
 with ChatGPT that may contain inaccuracies. However, it holds good educational value
-to get started with Rust in just one hour or so if you have experience with Python (and perhaps some 
+to get started with Rust in just one hour or so if you have experience with Python (and perhaps at least some 
 experience with a compiled language, to have a better reference point).
 
 Note: If you are using Rust for the very first time, a quick option is testing the language flavor
