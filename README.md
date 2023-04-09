@@ -1,7 +1,10 @@
 # A 15' coffee with ChatGPT where we talked about Rust, from a Python perspective. Like Plato's dialogues, but with hashmaps. 
 
+Disclainer: this is a conversation with minor style edits, so take it at it is, a conversation with chatGPT that might contain
+thing that are not exact. But it has a good educational value to start working with Rust.
 
-Note: If you are using Rust for the very first time, a quick option is testing the language flavor in a REPL using the evcxr kernel and a Jupyter notebook:
+Note: If you are using Rust for the very first time, a quick option is testing the language flavor
+in a REPL using the evcxr kernel and a Jupyter notebook:
 
 1) Install Rust and cargo: https://doc.rust-lang.org/cargo/getting-started/installation.html
 2) Install evcxr: https://github.com/evcxr/evcxr/blob/main/evcxr_jupyter/README.md
@@ -987,7 +990,7 @@ some time in learning how to use it effectively.
 ``` 
 
 ``` 
-What abourt being more verbose with types?
+What about being more verbose with types?
 ``` 
 
 ``` 
@@ -1015,7 +1018,8 @@ let name: String = String::from("Alice");
 ``` 
 
 ``` 
-This declares that name is a String type, and sets its initial value to a new String instance containing the text "Alice".
+This declares that name is a String type, and sets its initial value to a new String instance
+containing the text "Alice".
 
 Using explicit type annotations can make your code more clear and easier to read, especially 
 in situations where the type might not be immediately obvious from the context. However, Rust's 
