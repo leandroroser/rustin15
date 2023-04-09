@@ -733,7 +733,7 @@ Yes, that's correct! In Rust, println! is actually a macro
 that expands into a function call at compile time.
 
 When you write something like:
-
+```
 
 ```rust
 println!("Hello, world!");
