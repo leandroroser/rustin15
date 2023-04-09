@@ -1,4 +1,4 @@
-# A 5' coffee with ChatGPT where we talk about Rust, from a Pythonista perspective. Like Plato's dialogs, but with hashmaps. 
+# A 5' coffee with ChatGPT where we talked about Rust, from a Pythonista perspective. Like Plato's dialogs, but with hashmaps. 
 
 ### Starting from the end
 
