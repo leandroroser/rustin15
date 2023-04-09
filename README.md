@@ -1061,3 +1061,20 @@ x = 10; // we can reassign a new value to the mutable variable
 let y = 5;
 y = 10; // this will result in a compiler error, because y is immutable
 ``` 
+
+What is the purpose of the '&' symbol in Rust?
+
+```
+In Rust, the & symbol is used to create a reference to a value. 
+A reference is a way to refer to a value without taking ownership of it. 
+This allows multiple parts of a program to share access to the same data without creating copies.
+
+For example, if we have a variable x of type i32, we can create a reference to it using the & symbol:
+```
+
+``` rust
+let x = 42;
+let y = &x;
+```
+
+Here, y is a reference to x. 
