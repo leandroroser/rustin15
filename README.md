@@ -5,7 +5,7 @@ Note: If you are using Rust for the very first time, a quick option is testing t
 
 1) Install Rust and cargo: https://doc.rust-lang.org/cargo/getting-started/installation.html
 2) Install evcxr: https://github.com/evcxr/evcxr/blob/main/evcxr_jupyter/README.md
-3) Enjoy.
+3) 'jupyter notebook' in your terminal, and enjoy.
 
 
 ### Starting from the end
