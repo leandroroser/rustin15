@@ -829,8 +829,6 @@ Here are some examples of Rust's ownership system:
 ``` rust
 // Example 1: Transfer of Ownership
 
-rust
-Copy code
 fn main() {
     let s1 = String::from("hello");
     let s2 = s1;
