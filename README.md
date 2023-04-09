@@ -12,6 +12,11 @@ in a REPL using the evcxr kernel and a Jupyter notebook:
 2) Install evcxr: https://github.com/evcxr/evcxr/blob/main/evcxr_jupyter/README.md
 3) 'jupyter notebook' in your terminal, and enjoy.
 
+This is only for testing; officially, you can generate your code following the below guide:
+
+- https://doc.rust-lang.org/book/ch01-02-hello-world.html
+- https://doc.rust-lang.org/book/ch01-03-hello-cargo.html
+
 
 ### Starting from the end
 
