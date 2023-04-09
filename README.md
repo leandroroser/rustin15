@@ -1,4 +1,5 @@
-# A 15' coffee with ChatGPT where we talked about Rust, from a Python perspective. Like Plato's dialogues, but with hashmaps. 
+## A 15' coffee with ChatGPT where we talked about Rust, from a Python perspective. Like Plato's dialogues, but with hashmaps
+
 
 Disclaimer: This conversation has undergone minor style edits, so please take it as it is - a conversation
 with ChatGPT that may contain inaccuracies. However, it holds good educational value
